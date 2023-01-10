@@ -1,3 +1,30 @@
 .navbar, footer{
     background-color: rgb(000, 000, 000,0.1) !important;
 }   
+
+.contenido, .anuncio{
+    border: 1px solid green;
+    margin: 10px;
+    padding: 10px
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    font-size: 16px;
+}
+@media (max-width: 768px){
+    .grilla{
+        display: grid;
+        grid-template-columns: 1fr ;
+        font-size: 12px;
+        
+    }
+
+    .contenido, .anuncio{
+        border:0px;
+        border-top: 2px solid red;
+        margin: 5px;
+        padding: 5px
+    }
+}
