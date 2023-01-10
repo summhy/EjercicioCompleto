@@ -10,9 +10,13 @@
   </head>
   <body>
     <header>
+      <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<!--Nuestro reloj envuelto en un div -->
+	<div id="clock"></div> 
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="https://unab.cl">UNAB</a>
+          <a class="navbar-brand" href="https://unab.cl">EJERCICIO</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarNavDropdown"
             aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -41,7 +45,9 @@
                   <li><a class="dropdown-item" href="#">Something else here</a></li>
                 </ul>
               </li>
+
             </ul>
+             
           </div>
         </div>
       </nav>
@@ -58,10 +64,27 @@
             Exercitationem illo sequi delectus eaque laborum accusantium quaerat
             quisquam, voluptas suscipit ad quia quibusdam iste. Doloremque,
             optio. Sit doloremque numquam temporibus accusantium!</p>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Exercitationem illo sequi delectus eaque laborum accusantium quaerat
-            quisquam, voluptas suscipit ad quia quibusdam iste. Doloremque,
-            optio. Sit doloremque numquam temporibus accusantium!</p>
+            <div class="mapeo">
+              <div class="imagen">
+                <img src="img/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+            <map name="workmap">
+              <area target="" alt="" title="" href="" coords="274,347,36,43" shape="rect" onmousemove="mostrar(1)" onmouseout="ocultar()">
+              <area target="" alt="" title="" href="" coords="332,247,291,176" shape="rect" onmousemove="mostrar(2)" onmouseout="ocultar()">
+              <area target="" alt="" title="" href="" coords="336,301,46" shape="circle" onmousemove="mostrar(3)" onmouseout="ocultar()">
+              <area target="" alt="" title="" href="" coords="324,11,308,20,309,35,317,69,333,110,354,72,388,28" shape="poly" onmouseout="ocultar()">
+          </map>
+              </div>
+              <div class="detalle">
+                <h1 id="tituloDetalle"></h1>
+                <p id="descripcion">
+
+                </p>
+                <p id="precio"></p>
+              </div>
+              
+            </div>
+            
         </section>
         <aside class="anuncio">
 
@@ -82,5 +105,6 @@
         fugiat impedit explicabo aliquid?</p>
     </footer>
     <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

@@ -12,6 +12,22 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     font-size: 16px;
+
+}
+
+.mapeo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+.imagen{
+    margin-right: 10px;
+
+}
+
+.detalle{
+    background-color: lightblue;
+    display: none;
 }
 @media (max-width: 768px){
     .grilla{
@@ -27,4 +43,43 @@
         margin: 5px;
         padding: 5px
     }
+    .mapeo{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
+
+
+
+  /* Estilos de nuestro Reloj Digital IGeekZone */  
+  
+@font-face {  
+    font-family: 'digi';  
+    src: url('https://cssdeck.com/uploads/resources/fonts/digii/DS-DIGII.TTF');  
+}  
+  
+* {  
+    box-sizing: border-box;  
+}  
+  
+  
+  
+#clock {  
+    width: 250px; height: 50px;  
+    background: white;  
+    font-size: 1em;  
+    color: #707070;  
+  
+    /* Centrar nuestro reloj  
+    position: absolute;  
+    left: 50%; top: 50%;  
+    margin-left: -125px; margin-top: -50px;  */
+  
+    text-align: center;  
+    line-height: 50 px;  
+  
+    border-top: 5px solid #E54B6B;  
+    background-image: linear-gradient(#f0f0f0, white);  
+}  
+  
+  
